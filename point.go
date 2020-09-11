@@ -19,6 +19,10 @@ func (p *Point) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
+	if len(points) != 2 {
+		return errors.New("expecting Point data to conform to a slice of float64's of length 2")
+	}
+
 	var ok bool
 	if p.X, ok = points[0].(float64); !ok {
 		return errors.New("expecting float64 for Point's X field")
