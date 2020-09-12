@@ -5,6 +5,8 @@ import (
 	"errors"
 )
 
+const pointSliceLength = 2
+
 // Point contains the coordinates of a point on a cartesian plane.
 type Point struct {
 	X float64
@@ -19,7 +21,7 @@ func (p *Point) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	if len(points) != 2 {
+	if len(points) != pointSliceLength {
 		return errors.New("expecting Point data to conform to a slice of float64's of length 2")
 	}
 

@@ -18,7 +18,7 @@ func New(r io.Reader) (*Map, error) {
 		if ft.ID == "" {
 			return nil, errors.New("feature is missing its ID")
 		}
-		feats[ft.ID] = ft
+		feats[ft.ID] = *ft
 	}
 
 	mp, err := toMap(feats)
