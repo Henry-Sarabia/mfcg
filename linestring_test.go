@@ -1,8 +1,9 @@
 package mfcg
 
 import (
-	"reflect"
 	"testing"
+
+	"github.com/google/go-cmp/cmp"
 )
 
 func Test_geosToLineStrings(t *testing.T) {
@@ -16,7 +17,6 @@ func Test_geosToLineStrings(t *testing.T) {
 		want    []LineString
 		wantErr bool
 	}{
-		// TODO: Add test cases.
 		{
 			name: "Single geometry",
 			args: args{
@@ -67,11 +67,12 @@ func Test_geosToLineStrings(t *testing.T) {
 		t.Run(test.name, func(t *testing.T) {
 			got, err := geosToLineStrings(test.args.data)
 			if (err != nil) != test.wantErr {
-				t.Errorf("geosToLineStrings() error = %v, wantErr %v", err, test.wantErr)
+				t.Errorf("got: <%v>, want error: <%v>", err, test.wantErr)
 				return
 			}
-			if !reflect.DeepEqual(got, test.want) {
-				t.Errorf("geosToLineStrings() = %v, want %v", got, test.want)
+
+			if diff := cmp.Diff(got, test.want); diff != "" {
+				t.Errorf("mismatch (-want +got):\n%s", diff)
 			}
 		})
 	}
