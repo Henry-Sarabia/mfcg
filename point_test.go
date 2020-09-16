@@ -11,7 +11,7 @@ func TestPoint_UnmarshalJSON(t *testing.T) {
 	type args struct {
 		data []byte
 	}
-	
+
 	tests := []struct {
 		name    string
 		args    args
@@ -19,7 +19,7 @@ func TestPoint_UnmarshalJSON(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			name: "Two float64 elements",
+			name: "Exactly 2 float64's",
 			args: args{
 				data: []byte(`[12.3, 45.6]`),
 			},
@@ -27,15 +27,7 @@ func TestPoint_UnmarshalJSON(t *testing.T) {
 			wantErr: false,
 		},
 		{
-			name: "Less than 2 elements",
-			args: args{
-				data: []byte(`[12.3]`),
-			},
-			want:    Point{},
-			wantErr: true,
-		},
-		{
-			name: "More than 2 elements",
+			name: "More than two float64's",
 			args: args{
 				data: []byte(`[12.3, 45.6, 78.9]`),
 			},
@@ -43,7 +35,15 @@ func TestPoint_UnmarshalJSON(t *testing.T) {
 			wantErr: true,
 		},
 		{
-			name: "Zero elements",
+			name: "Less than two float64's",
+			args: args{
+				data: []byte(`[12.3]`),
+			},
+			want:    Point{},
+			wantErr: true,
+		},
+		{
+			name: "Zero float64's",
 			args: args{
 				data: []byte(`[]`),
 			},
@@ -61,7 +61,7 @@ func TestPoint_UnmarshalJSON(t *testing.T) {
 		{
 			name: "Invalid data type",
 			args: args{
-				data: []byte(`["12.3","45.6"]`),
+				data: []byte(`["foo", "bar"]`),
 			},
 			want:    Point{},
 			wantErr: true,
