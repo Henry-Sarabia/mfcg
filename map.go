@@ -2,18 +2,18 @@ package mfcg
 
 // ID names can be found in a map's JSON data.
 const (
-	IDValues    string = "values"
 	IDEarth     string = "earth"
-	IDRoads     string = "roads"
-	IDWalls     string = "walls"
-	IDRivers    string = "rivers"
 	IDPlanks    string = "planks"
+	IDRivers    string = "rivers"
+	IDRoads     string = "roads"
 	IDBuildings string = "buildings"
+	IDFields    string = "fields"
+	IDGreens    string = "greens"
 	IDPrisms    string = "prisms"
 	IDSquares   string = "squares"
-	IDGreens    string = "greens"
-	IDFields    string = "fields"
+	IDWalls     string = "walls"
 	IDWater     string = "water"
+	IDValues    string = "values"
 )
 
 // Map represents a cartographical map. It contains a collection of features

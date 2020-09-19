@@ -33,6 +33,50 @@
     },
     {
       "type": "GeometryCollection",
+      "id": "planks",
+      "geometries": [
+        {
+          "type": "LineString",
+          "width": 3.2,
+          "coordinates": [
+            [
+              128.119,
+              -82.355
+            ],
+            [
+              153.725,
+              -101.548
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "GeometryCollection",
+      "id": "rivers",
+      "geometries": [
+        {
+          "type": "LineString",
+          "width": 20.079037338457553,
+          "coordinates": [
+            [
+              93.579,
+              -128.437
+            ],
+            [
+              67.981,
+              -102.576
+            ],
+            [
+              59.021,
+              -60.776
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "GeometryCollection",
       "id": "roads",
       "geometries": [
         {
@@ -74,76 +118,6 @@
       ]
     },
     {
-      "type": "GeometryCollection",
-      "id": "walls",
-      "geometries": [
-        {
-          "type": "Polygon",
-          "width": 7.6,
-          "coordinates": [
-            [
-              [
-                -68.846,
-                46.65
-              ],
-              [
-                -38.751,
-                75.532
-              ],
-              [
-                3.733,
-                87.117
-              ]
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "type": "GeometryCollection",
-      "id": "rivers",
-      "geometries": [
-        {
-          "type": "LineString",
-          "width": 20.079037338457553,
-          "coordinates": [
-            [
-              93.579,
-              -128.437
-            ],
-            [
-              67.981,
-              -102.576
-            ],
-            [
-              59.021,
-              -60.776
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "type": "GeometryCollection",
-      "id": "planks",
-      "geometries": [
-        {
-          "type": "LineString",
-          "width": 3.2,
-          "coordinates": [
-            [
-              128.119,
-              -82.355
-            ],
-            [
-              153.725,
-              -101.548
-            ]
-          ]
-        }
-      ]
-    },
-    {
       "type": "MultiPolygon",
       "id": "buildings",
       "coordinates": [
@@ -172,6 +146,41 @@
           ]
         ]
       ]
+    },
+    {
+      "type": "MultiPolygon",
+      "id": "fields",
+      "coordinates": [
+        [
+          [
+            [
+              -78.086,
+              -37.908
+            ],
+            [
+              -91.414,
+              -40.811
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              -106.891,
+              -86.758
+            ],
+            [
+              -69.06,
+              -78.517
+            ]
+          ]
+        ]
+      ]
+    },
+    {
+      "type": "MultiPolygon",
+      "id": "greens",
+      "coordinates": []
     },
     {
       "type": "MultiPolygon",
@@ -218,38 +227,29 @@
       ]
     },
     {
-      "type": "MultiPolygon",
-      "id": "greens",
-      "coordinates": []
-    },
-    {
-      "type": "MultiPolygon",
-      "id": "fields",
-      "coordinates": [
-        [
-          [
+      "type": "GeometryCollection",
+      "id": "walls",
+      "geometries": [
+        {
+          "type": "Polygon",
+          "width": 7.6,
+          "coordinates": [
             [
-              -78.086,
-              -37.908
-            ],
-            [
-              -91.414,
-              -40.811
+              [
+                -68.846,
+                46.65
+              ],
+              [
+                -38.751,
+                75.532
+              ],
+              [
+                3.733,
+                87.117
+              ]
             ]
           ]
-        ],
-        [
-          [
-            [
-              -106.891,
-              -86.758
-            ],
-            [
-              -69.06,
-              -78.517
-            ]
-          ]
-        ]
+        }
       ]
     },
     {
