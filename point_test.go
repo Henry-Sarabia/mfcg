@@ -59,9 +59,17 @@ func TestPoint_UnmarshalJSON(t *testing.T) {
 			wantErr: true,
 		},
 		{
-			name: "Invalid data type",
+			name: "Invalid X field data type",
 			args: args{
-				data: []byte(`["foo", "bar"]`),
+				data: []byte(`["foo", 12.3]`),
+			},
+			want:    Point{},
+			wantErr: true,
+		},
+		{
+			name: "Invalid Y field data type",
+			args: args{
+				data: []byte(`[12.3, "bar"]`),
 			},
 			want:    Point{},
 			wantErr: true,
