@@ -1,0 +1,273 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "id": "values",
+        "roadWidth": 8,
+        "towerRadius": 7.6,
+        "wallThickness": 7.6,
+        "generator": "mfcg",
+        "version": "0.7.7a",
+        "riverWidth": 20.079037338457553
+      },
+      {
+        "type": "Polygon",
+        "id": "earth",
+        "coordinates": [
+          [
+            [
+              -387.597,
+              -107.006
+            ],
+            [
+              -392.249,
+              -105.345
+            ],
+            [
+              -435.589,
+              14.775
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "GeometryCollection",
+        "id": "planks",
+        "geometries": [
+          {
+            "type": "LineString",
+            "coordinates": [
+              [
+                128.119,
+                -82.355
+              ],
+              [
+                153.725,
+                -101.548
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "GeometryCollection",
+        "id": "rivers",
+        "geometries": [
+          {
+            "type": "LineString",
+            "coordinates": [
+              [
+                93.579,
+                -128.437
+              ],
+              [
+                67.981,
+                -102.576
+              ],
+              [
+                59.021,
+                -60.776
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "GeometryCollection",
+        "id": "roads",
+        "geometries": [
+          {
+            "type": "LineString",
+            "coordinates": [
+              [
+                0.747,
+                -26.841
+              ],
+              [
+                -59.341,
+                -55.113
+              ],
+              [
+                -131.14,
+                -70.752
+              ]
+            ]
+          },
+          {
+            "type": "LineString",
+            "coordinates": [
+              [
+                26.734,
+                -2.507
+              ],
+              [
+                56.657,
+                -15.577
+              ],
+              [
+                120.094,
+                9.553
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "MultiPolygon",
+        "id": "buildings",
+        "coordinates": [
+          [
+            [
+              [
+                45.922,
+                13.742
+              ],
+              [
+                45.238,
+                5.889
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                28.763,
+                15.236
+              ],
+              [
+                28.483,
+                27.601
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "MultiPolygon",
+        "id": "fields",
+        "coordinates": [
+          [
+            [
+              [
+                -78.086,
+                -37.908
+              ],
+              [
+                -91.414,
+                -40.811
+              ]
+            ]
+          ],
+          [
+            [
+              [
+                -106.891,
+                -86.758
+              ],
+              [
+                -69.06,
+                -78.517
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "MultiPolygon",
+        "id": "greens",
+        "coordinates": []
+      },
+      {
+        "type": "MultiPolygon",
+        "id": "prisms",
+        "coordinates": [
+          [
+            [
+              [
+                12.019,
+                4.231
+              ],
+              [
+                9.822,
+                -1.073
+              ],
+              [
+                4.518,
+                -3.27
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "MultiPolygon",
+        "id": "squares",
+        "coordinates": [
+          [
+            [
+              [
+                26.734,
+                -2.507
+              ],
+              [
+                0.747,
+                -26.841
+              ],
+              [
+                -26.734,
+                2.507
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "type": "GeometryCollection",
+        "id": "walls",
+        "geometries": [
+          {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  -68.846,
+                  46.65
+                ],
+                [
+                  -38.751,
+                  75.532
+                ],
+                [
+                  3.733,
+                  87.117
+                ]
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "MultiPolygon",
+        "id": "water",
+        "coordinates": [
+          [
+            [
+              [
+                93.579,
+                -128.437
+              ],
+              [
+                139.633,
+                -66.994
+              ],
+              [
+                201.401,
+                -53.259
+              ]
+            ]
+          ]
+        ]
+      }
+    ]
+  }
