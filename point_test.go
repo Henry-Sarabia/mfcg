@@ -71,7 +71,7 @@ func TestPoint_UnmarshalJSON(t *testing.T) {
 			args: args{
 				data: []byte(`[12.3, "bar"]`),
 			},
-			want:    Point{},
+			want:    Point{X: 12.3, Y: 0},
 			wantErr: true,
 		},
 	}
