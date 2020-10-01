@@ -2,7 +2,6 @@ package mfcg
 
 import (
 	"encoding/json"
-	"errors"
 	"io"
 )
 
@@ -16,7 +15,7 @@ func New(r io.Reader) (*Map, error) {
 	feats := make(map[string]feature)
 	for _, ft := range collect.Features {
 		if ft.ID == "" {
-			return nil, errors.New("feature is missing its ID")
+			continue
 		}
 		feats[ft.ID] = *ft
 	}

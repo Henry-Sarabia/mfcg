@@ -1,0 +1,17 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Polygon",
+        "id": "earth",
+        "coordinates": [
+          [
+            [
+              "foo",
+              "bar"
+            ]
+          ]
+        ]
+      }
+    ]
+  }
