@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	testFileMap       string = "./test_data/mapNoWidth.json"
+	testFileMap       string = "./test_data/map.json"
 	testFileMissingID string = "./test_data/mapMissingID.json"
 	testFileInvalid   string = "./test_data/mapInvalidFeature.json"
 	testFileEmpty     string = "./test_data/emptyArray.json"
@@ -29,6 +29,7 @@ func TestNew(t *testing.T) {
 		},
 		Planks: []LineString{
 			{
+				Width: 3.2,
 				Coords: []Point{
 					{X: 128.119, Y: -82.355},
 					{X: 153.725, Y: -101.548},
@@ -37,6 +38,7 @@ func TestNew(t *testing.T) {
 		},
 		Rivers: []LineString{
 			{
+				Width: 20.079037338457553,
 				Coords: []Point{
 					{X: 93.579, Y: -128.437},
 					{X: 67.981, Y: -102.576},
@@ -46,6 +48,7 @@ func TestNew(t *testing.T) {
 		},
 		Roads: []LineString{
 			{
+				Width: 8,
 				Coords: []Point{
 					{X: 0.747, Y: -26.841},
 					{X: -59.341, Y: -55.113},
@@ -53,6 +56,7 @@ func TestNew(t *testing.T) {
 				},
 			},
 			{
+				Width: 8,
 				Coords: []Point{
 					{X: 26.734, Y: -2.507},
 					{X: 56.657, Y: -15.577},
@@ -121,6 +125,7 @@ func TestNew(t *testing.T) {
 		},
 		Walls: []Polygon{
 			{
+				Width: 7.6,
 				Coords: [][]Point{
 					{
 						{X: -68.846, Y: 46.65},
