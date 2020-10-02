@@ -44,7 +44,7 @@ type MetaData struct {
 }
 
 // toMap transforms the provided feature map into a cartographical Map. The
-// feature map's keys must be each features' respective name.
+// feature map's keys must match each features' respective ID.
 func toMap(feats map[string]feature) (*Map, error) {
 	var result Map
 
