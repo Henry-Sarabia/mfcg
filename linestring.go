@@ -23,7 +23,7 @@ func geosToLineStrings(data []byte) ([]LineString, error) {
 		if err := json.Unmarshal(*g, &ln); err != nil {
 			return nil, err
 		}
-
+		
 		lines = append(lines, ln)
 	}
 
