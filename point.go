@@ -5,6 +5,7 @@ import (
 	"errors"
 )
 
+// pointSliceLength equals the length of MFCG's coordinate arrays.
 const pointSliceLength = 2
 
 // Point contains the coordinates of a point on a cartesian plane.
